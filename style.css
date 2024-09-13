@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    font-family: Arial, sans-serif;
+}
+
+.header
+{
+    background-color: rgb(28, 84, 3);
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.cont {
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.product {
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+    background-color: rgb(146, 255, 195);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.product_basket
+{
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.price
+{
+    font-weight: bold;
+    font-size: 30px;
+
+}
+
+button
+{
+    background-color: green;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    align-items: center;
+    display: flex;
+    height: fit-content;
+    /* max-width:  90px; */
+}
+
+.cont1
+{
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: aqua; */
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    max-width:  1500px;
+    margin: 0 auto;
+}
+
+.nav
+{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.phone
+{
+    font-weight: bold;
+    /* font-size: 30px; */
+    background-color: white;
+    color: green;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.total
+{
+    /* height: 100px; */
+    background-color: green;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 30px;
+    color: white;
+    font-size: 25px;
+}
+
+.bask_cont
+{
+    padding: 20px;
+    background-color: rgb(191, 255, 211);
+    border-radius: 10px;
+}
+
+.pr_cont
+{
+    padding-top: 20px;
+}
+
+.title
+{
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-weight: bold;
+}
