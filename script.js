@@ -1,5 +1,4 @@
-const total = document.getElementById("total-price");
-const total1 = document.getElementById("quantity");
+
 document.addEventListener('DOMContentLoaded', loadProducts);
 const list_products = [
     {
@@ -70,7 +69,9 @@ const list_products = [
 
    
 ];
-let id = 0;
+const total = document.getElementById("total-price");
+const total1 = document.getElementById("quantity");
+
 function update()
 {
     list_basket.map(function(product) {
@@ -92,7 +93,6 @@ function update()
         const pr_count = document.createElement('p');
         pr_count.innerHTML = product.count;
         basket_el.appendChild(pr_count);
-        // basket_el.id = product.id;
 
         const deleteButton = document.createElement('button');
         deleteButton.innerHTML = 'Удалить';
@@ -104,9 +104,6 @@ function update()
         basket_el.classList.add('product_basket');
         basket_el.id = product.id;
 
-
-
-    
         basket.appendChild(basket_el);
         console.log(list_basket);
     });
@@ -211,9 +208,7 @@ function updateTotal()
         sum += list_basket[i].price * list_basket[i].count;
     }
 
-
     total.innerHTML = "Общая стоимость: " + sum + " руб.";
-    // console.log(sum);
 }
 
 function UpdateQuantity()
@@ -222,7 +217,6 @@ function UpdateQuantity()
     for (let i = 0; i < list_basket.length; i++) {
         sum += list_basket[i].count;
     }
-
 
     total1.innerHTML = "Общая количество: " + sum + " шт.";
 }

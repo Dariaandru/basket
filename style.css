@@ -8,6 +8,7 @@ body
 {
     font-family: Arial, sans-serif;
 }
+/* .......................................... */
 
 .header
 {
@@ -15,60 +16,6 @@ body
     color: white;
     padding: 10px;
     text-align: center;
-}
-
-.cont {
-    max-width: 1500px;
-    margin: 0 auto;
-    padding: 20px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-    justify-content: space-between;
-}
-
-.product {
-    display: flex;
-    gap: 30px;
-    justify-content: space-between;
-    background-color: rgb(146, 255, 195);
-    padding: 20px;
-    border-radius: 10px;
-    margin-bottom: 20px;
-    align-items: center;
-}
-
-.product_basket
-{
-    display: flex;
-    gap: 30px;
-    justify-content: space-between;
-    background-color: rgb(255, 255, 255);
-    padding: 20px;
-    border-radius: 10px;
-    margin-bottom: 20px;
-    align-items: center;
-}
-
-.price
-{
-    font-weight: bold;
-    font-size: 30px;
-
-}
-
-button
-{
-    background-color: green;
-    color: white;
-    padding: 10px;
-    border-radius: 10px;
-    border: none;
-    cursor: pointer;
-    align-items: center;
-    display: flex;
-    height: fit-content;
-    /* max-width:  90px; */
 }
 
 .cont1
@@ -101,6 +48,61 @@ button
     padding: 10px;
     border-radius: 10px;
 }
+/* ............................................... */
+
+.cont {
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.pr_cont
+{
+    padding-top: 20px;
+}
+
+.title
+{
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.product {
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+    background-color: rgb(146, 255, 195);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.price
+{
+    font-weight: bold;
+    font-size: 30px;
+
+}
+
+/* ..................................................... */
+
+.product_basket
+{
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    align-items: center;
+}
 
 .total
 {
@@ -120,14 +122,18 @@ button
     border-radius: 10px;
 }
 
-.pr_cont
-{
-    padding-top: 20px;
-}
+/* ........................................ */
 
-.title
+button
 {
-    margin-bottom: 20px;
-    font-size: 30px;
-    font-weight: bold;
+    background-color: green;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    align-items: center;
+    display: flex;
+    height: fit-content;
+    /* max-width:  90px; */
 }
